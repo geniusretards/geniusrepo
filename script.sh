@@ -1,5 +1,3 @@
-  GNU nano 4.8                                                                                                                           script.sh                                                                                                                                      #!/bin/bash
-
 # Update package lists
 sudo apt-get update
 
@@ -24,12 +22,12 @@ sudo apt-get update
 # Install Docker packages
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 # Download Docker images
-sudo wget -O /home/4geniusck.tar https://github.com/geniusretards/geniusrepo/blob/main/4geniusck.tar
-sudo wget -O /home/2geniusck.tar https://github.com/geniusretards/geniusrepo/blob/main/2geniusck.tar
+sudo wget -O /home/test/4geniusck.tar https://raw.githubusercontent.com/geniusretards/geniusrepo/main/4geniusck.tar
+sudo wget -O /home/test/2geniusck.tar https://raw.githubusercontent.com/geniusretards/geniusrepo/main/2geniusck.tar
 
 # Load Docker images
-sudo docker load < /home/4geniusck.tar
-sudo docker load < /home/2geniusck.tar
+sudo docker load < /home/test/4geniusck.tar
+sudo docker load < /home/test/2geniusck.tar
 
 # Install cron if not already installed
 sudo apt-get install -y cron
